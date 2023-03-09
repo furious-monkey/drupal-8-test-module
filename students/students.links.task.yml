@@ -1,0 +1,4 @@
+students_list:
+  title: Students
+  route_name: students_list
+  base_route: system.admin_content

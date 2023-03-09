@@ -1,0 +1,35 @@
+<?php
+
+/**
+* Implements hook_menu()
+*/
+function students_array() {
+  return array(
+    'admin/content/students' => array(
+      'title' => 'Students list',
+      'route_name' => 'students_list',
+    ),
+    'admin/content/students/add' => array(
+      'title' => 'Student Add',
+      'route_name' => 'students_add',
+    ),
+    'admin/content/students/delete/%' => array(
+      'title' => 'Delete Student',
+      'route_name' => 'students_delete',
+    ),
+  );
+}
+
+/**
+ * Implements hook_permission()
+ */
+/*function students_permission() {
+  return array(
+    'manage students forms' => array(
+      'title' => t('Manage students form submissions'),
+    ),
+    'use students form' => array(
+      'title' => t('Use the students form'),
+    ),
+  );
+}*/

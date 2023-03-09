@@ -1,0 +1,5 @@
+name: Students
+description: 'Custom Students Drupal 8 Module.'
+type: module
+core: 8.x
+package: Students

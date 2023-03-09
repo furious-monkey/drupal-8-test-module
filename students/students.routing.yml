@@ -1,0 +1,30 @@
+students_list:
+  path: '/admin/content/students'
+  defaults:
+    _controller: '\Drupal\students\Controller\AdminController::content'
+  requirements:
+    _permission: 'access students content'
+
+students_add:
+  path: '/admin/content/students/add'
+  defaults:
+    _form: '\Drupal\students\AddForm'
+    _title: 'Create student'
+  requirements:
+    _permission: 'edit students content'
+
+students_edit:
+  path: 'admin/content/students/edit/{id}'
+  defaults:
+    _form: '\Drupal\students\AddForm'
+    _title: 'Edit student'
+  requirements:
+    _permission: 'edit students content'
+
+students_delete:
+  path: '/admin/content/students/delete/{id}'
+  defaults:
+    _form: 'Drupal\students\DeleteForm'
+    _title: 'Delete student'
+  requirements:
+    _permission: 'delete students content'
